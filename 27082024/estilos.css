@@ -1,0 +1,17 @@
+h1 {
+  color: blue;
+  border: 1px solid aquamarine;
+}
+
+.parrafoRojo {
+  font-size: 35px;
+  border: 1px solid red;
+}
+
+.parrafoUwu {
+  color: gainsboro;
+  background-color: darkcyan;
+  border: 2px solid brown;
+  margin-top: 120px;
+  padding-bottom: 120px;
+}
