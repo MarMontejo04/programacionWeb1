@@ -1,0 +1,47 @@
+.titulo{
+    text-align: center;
+    font-size:xx-large;
+}
+.horario{
+    table-layout:auto;
+    border: 1px solid black;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.encabezado td{
+    background-color: lightblue;
+    border: 1px solid black;
+    padding: 1%;
+    text-align: center;
+    font-weight: bolder;
+}
+.materias{
+    background-color: azure;
+    border: 1px solid black;
+    padding: 1%;
+    text-align: left;
+}
+.hora{
+    border: 1px solid black;
+    padding: 1%;
+    text-align: center;
+}
+.disenologico{
+    background-color: lightgoldenrodyellow;
+}
+.programacion{
+    background-color: lightcyan;
+}
+.lenguajes{
+    background-color: lightseagreen;
+}
+.disenoyanalisis{
+    background-color: lightsalmon;
+}
+.administracion{
+    background-color: lightpink;
+}
+.lab{
+    background-color: lightgreen;
+}
