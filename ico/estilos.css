@@ -1,4 +1,4 @@
-body {
+.azul {
   background: rgb(179, 236, 214);
   background: radial-gradient(
     circle,
@@ -7,8 +7,20 @@ body {
     rgba(148, 173, 233, 1) 100%
   );
 }
-.centrado{
-    text-align: center;
-    border: 2px solid black;
-    padding-left: 1em;
+.rosa {
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+}
+.centrado {
+  text-align: center;
+  border: 2px solid black;
+}
+
+.caja{
+  width: 20%;
+  margin: 0 auto;
 }
