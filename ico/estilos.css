@@ -1,0 +1,14 @@
+body {
+  background: rgb(179, 236, 214);
+  background: radial-gradient(
+    circle,
+    rgba(179, 236, 214, 1) 5%,
+    rgba(168, 233, 235, 1) 53%,
+    rgba(148, 173, 233, 1) 100%
+  );
+}
+.centrado{
+    text-align: center;
+    border: 2px solid black;
+    padding-left: 1em;
+}
