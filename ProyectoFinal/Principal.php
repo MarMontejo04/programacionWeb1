@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuarios</title>
-    <link type="text/css" rel="stylesheet" href="estilos/materialize.min.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="estilos/style.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="./estilos/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="./estilos/style.css"  media="screen,projection"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="shortcut icon" href="media/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./media/favicon.png" type="image/x-icon">
 </head>
 <body>
     <div class="navbar-fixed ">
@@ -16,7 +16,7 @@
                 <ul class="right hide-on-med-and-down " >
                     <li><a class="black-text text-darken-2" href='./Registro.php'><i class="material-icons left">border_color</i>REGISTRAR USUARIO</a></li>
                     <li><a class="black-text text-darken-2" href='./EliminarUsuario.php'><i class="material-icons left">delete</i>ELIMINAR USUARIO</a></li>
-                    <li><a class="black-text text-darken-2" href='logica/salir.php'><i class="material-icons left">exit_to_app</i>SALIR</a></li>
+                    <li><a class="black-text text-darken-2" href='./logica/salir.php'><i class="material-icons left">exit_to_app</i>SALIR</a></li>
             </div>
         </nav>
     </div>
@@ -37,7 +37,7 @@ if(!isset($email)){
     $resultado_usuario = $conexion->query($consulta_usuario);
 
     if ($resultado_usuario->num_rows > 0) {
-        // Extraer los datos del usuario
+      
         $usuario = $resultado_usuario->fetch_assoc();
         $nombre = $usuario['nombre'];
         $apellido = $usuario['apellido'];
@@ -75,7 +75,7 @@ if(!isset($email)){
             echo "<tr>";
                 echo"<td class='left-align'>". $row['nombre']." ".$row['apellido'] ."</td>";
                 echo"<td class='center-align'>". $row['correo'] ."</td>";
-                echo"<td class='center-align'>". $row['contraseña'] ."</td>";
+                echo"<td class='center-align'>". $row['contrasena'] ."</td>";
                 echo"<td class='center-align'>". $row['telefono'] ."</td>";
                 echo"<td class='center-align'>". $row['fecha_creacion_user'] ."</td>";
                 echo"<td class='center-align'>". $row['fecha_nacimiento'] ."</td>";

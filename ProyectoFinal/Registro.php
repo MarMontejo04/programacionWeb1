@@ -12,10 +12,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" >
     <title>Registro</title>
-    <link type="text/css" rel="stylesheet" href="estilos/materialize.min.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="estilos/style.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="./estilos/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="./estilos/style.css"  media="screen,projection"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="media/favicon.png" type="image/x-icon">
 </head>
@@ -25,9 +24,8 @@
         <nav class="fondopastel z-depth-2" role="navigation">
             <div class="nav-wrapper container "><a id="logo-container" href="https://www.aragon.unam.mx/fes-aragon/#!/inicio" class="brand-logo black-text ">FES ARAGÓN</a>
                 <ul class="right hide-on-med-and-down " >
-                    <li><a class="black-text text-darken-2" href='./Registro.php'><i class="material-icons left">border_color</i>REGISTRAR NUEVO USUARIO</a></li>
                     <li><a class="black-text text-darken-2" href='./Principal.php'><i class="material-icons left">assignment</i>VER REGISTROS</a></li>
-                    <li><a class="black-text text-darken-2" href='logica/salir.php'><i class="material-icons left">exit_to_app</i>SALIR</a></li>
+                    <li><a class="black-text text-darken-2" href='./logica/salir.php'><i class="material-icons left">exit_to_app</i>SALIR</a></li>
             </div>
         </nav>
     </div>
@@ -41,45 +39,45 @@
             <form class="col s12" action="./logica/enviarRegistro.php" method="post">
                 <div class="row">
                     <div class="input-field col s6">
-                        <input type="text" name="nombre" maxlength="100" class="validate">
+                        <input type="text" name="nombre" maxlength="30" class="validate" required>
                         <label for="nombre">Nombre(s):</label>
                     </div>
                     <div class="input-field col s6">
-                        <input type="text" name="apellido" maxlength="100" class="validate">
+                        <input type="text" name="apellido" maxlength="50" class="validate" required>
                         <label for="apellido">Apellidos:</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
-                        <input type="text" name="correo" maxlength="100" class="validate">
+                        <input type="text" name="correo" maxlength="50" class="validate" required>
                         <label for="correo">Correo:</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
-                        <input type="date" name="fecha_nacimiento" class="datepicker" maxlength="100" class="validate">
+                        <input type="date" name="fecha_nacimiento" class="validate" required>
                         <label for="fecha_nacimiento">Fecha de nacimiento:</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">                        
-                        <input type="text" name="direccion" maxlength="100" class="validate">
+                        <input type="text" name="direccion" maxlength="120" class="validate" required>
                         <label for="direccion">Dirección Particular:</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">                    
-                        <input type="text" name="telefono" maxlength="8" class="validate">
+                        <input type="text" name="telefono" maxlength="10" class="validate" required>
                         <label for="telefono">Teléfono:</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
-                        <input type="password" name="contraseña" maxlength="8" class="validate">
-                        <label for="contraseña">Contraseña:</label>
+                        <input type="password" name="contrasena" maxlength="20" class="validate" required>
+                        <label for="contrasena">Contraseña:</label>
                     </div>
                 </div>
-                <button class= "btn waves-effect waves-light blue lighten-5 black-text" type="submit" name="submit">Enviar registro<i class="material-icons right">send</i></button>
+                <button class= "btn waves-effect waves-light blue lighten-5 black-text" type="submit">Enviar registro<i class="material-icons right">send</i></button>
             </form>
         </div>
     </div>
